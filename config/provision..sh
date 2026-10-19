@@ -12,8 +12,8 @@ sed -i 's/OPTIONS=.*/OPTIONS="-u bind -4"/' /etc/default/named
 echo "=== 3. Copia de archivos de configuración ==="
 cp /vagrant/files/named.conf.options /etc/bind/named.conf.options
 cp /vagrant/files/named.conf.local /etc/bind/named.conf.local
-cp /vagrant/files/tunombre.test.dns /var/lib/bind/tunombre.test.dns
-cp /vagrant/files/tunombre.test.rev /var/lib/bind/tunombre.test.rev
+cp /vagrant/files/ignacio.test.dns /var/lib/bind/ignacio.test.dns
+cp /vagrant/files/ignacio.test.rev /var/lib/bind/ignacio.test.rev
 
 chown -R bind:bind /etc/bind /var/lib/bind
 
