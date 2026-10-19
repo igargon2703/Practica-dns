@@ -1,0 +1,10 @@
+$TTL    86400
+@       IN      SOA     debian.ignacio.test. admin.ignacio.test. (
+                              2026033001 ; Serial
+                                    3600 ; Refresh
+                                    1800 ; Retry
+                                  604800 ; Expire
+                                   86400 ) ; Negative Cache TTL
+;
+@       IN      NS      debian.ignacio.test.
+10      IN      PTR     debian.ignacio.test.

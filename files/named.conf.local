@@ -1,0 +1,9 @@
+zone "ignacio.test" {
+    type master;
+    file "/var/lib/bind/ignacio.test.dns";
+};
+
+zone "56.168.192.in-addr.arpa" {
+    type master;
+    file "/var/lib/bind/ignacio.test.rev";
+};

@@ -1,0 +1,14 @@
+$TTL    86400
+@       IN      SOA     debian.ignacio.test. admin.ignacio.test. (
+                              2026033001 ; Serial
+                                    3600 ; Refresh
+                                    1800 ; Retry
+                                  604800 ; Expire
+                                   86400 ) ; Negative Cache TTL
+;
+@       IN      NS      debian.ignacio.test.
+debian  IN      A       192.168.56.10
+
+; Registros de ampliación (Sección 7.1)
+web     IN      CNAME   debian.ignacio.test.
+@       IN      TXT     "igargon2703"
