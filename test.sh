@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 echo "=== 1. Comprobación de sintaxis de ficheros ==="
 named-checkconf /etc/bind/named.conf.options && echo "[OK] named.conf.options"
 named-checkzone ignacio.test /var/lib/bind/ignacio.test.dns && echo "[OK] Zona directa"

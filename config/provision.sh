@@ -1,3 +1,4 @@
+cat << 'EOF' > config/provision.sh
 #!/usr/bin/env bash
 set -e
 
@@ -20,3 +21,4 @@ chown -R bind:bind /etc/bind /var/lib/bind
 echo "=== 4. Reiniciar servicio DNS ==="
 systemctl restart named
 systemctl enable named
+EOF
